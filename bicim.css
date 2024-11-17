@@ -1,0 +1,30 @@
+
+.shortened-paragraph {
+    width: 50%; 
+    margin: 10 auto; 
+    text-align: justify; 
+    line-height: 1.5; 
+}
+
+.red-text{
+
+
+    color:red;
+    
+}
+
+.green-text{
+
+
+    color: green;
+
+
+}
+
+
+.purple-text{
+
+    color: purple;
+}
+
+
