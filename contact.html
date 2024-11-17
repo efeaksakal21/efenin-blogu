@@ -1,0 +1,117 @@
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>İletişim - Blog</title>
+        <style>
+            
+
+            #contact-form input,
+        #contact-form textarea {
+            width: 50%; 
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+            #contact-form {
+                background-color:yellow;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            #contact-form label {
+                display: block;
+                margin-bottom: 8px;
+            }
+    
+            #contact-form input
+             {
+                width: 10%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+    
+            #contact-form button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            #contact-form button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        
+        <section id="contact-form">
+            <h2>İletişim Formu</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="surname"> Soyadınız:         </label >
+                 <input type="text" id="surname"  surname="surname" required     > 
+                 <br><br>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+    
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br><br>
+    
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    
+        
+    
+
+        <script>
+            function validateForm() {
+                
+                const name = document.getElementById("name").value;
+                const surname=document.getElementById("surname").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+    
+                if (name === "" || surname==="" ||email === "" || message === "") {
+                    alert("Lütfen tüm alanları doldurun.");
+                    return false;
+                }
+               
+                alert("Form başarıyla gönderildi!");
+                return true;
+            }
+        </script>
+    
+    </body>
+    </html>
+    
+
+
+
+
+
+</body>
+</html>
